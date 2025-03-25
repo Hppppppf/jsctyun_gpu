@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "江苏电信云省分DeepSeek工具集"
+  title: "江苏电信云省分<br>DeepSeek工具集"
   content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
   image: "/images/banner.png"
   button:
