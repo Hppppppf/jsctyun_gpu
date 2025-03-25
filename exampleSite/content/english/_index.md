@@ -8,18 +8,6 @@ banner:
     enable: true
     label: "算力部署计算器"
     link: "https://github.com/zeon-studio/hugoplate"
-  button:
-    enable: true
-    label: "部署手册(昇腾)"
-    link: "https://github.com/zeon-studio/hugoplate"
-  button:
-    enable: true
-    label: "部署手册(昇腾)"
-    link: "https://github.com/zeon-studio/hugoplate"
-  button:
-    enable: true
-    label: "息壤智算问答"
-    link: "https://github.com/zeon-studio/hugoplate"
 
 # Features
 features:
@@ -34,9 +22,13 @@ features:
       - "SEO-optimized for better search engine rankings"
       - "**Open-source and free** for personal and commercial use"
     button:
-      enable: false
-      label: "Get Started Now"
+      enable: true
+      label: "部署手册(昇腾)"
       link: "#"
+    button2:
+      enable: true
+      label: "部署手册(英伟达)"
+      link: "https://github.com/zeon-studio/hugoplate"
 
   - title: "Discover the Key Features Of Hugo"
     image: "/images/service-2.png"
@@ -47,7 +39,7 @@ features:
       - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
     button:
       enable: true
-      label: "Get Started Now"
+      label: "息壤智算问答"
       link: "https://github.com/zeon-studio/hugoplate"
 
   - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
