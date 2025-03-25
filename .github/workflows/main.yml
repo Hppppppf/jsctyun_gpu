@@ -54,12 +54,6 @@ jobs:
       - name: Setup Project
         run: npm run project-setup
 
-      - name: Remove Dark Mode
-        run: npm run remove-darkmode
-
-      - name: Setup Project
-        run: npm run project-setup
-
       - name: Install npm dependencies
         run: npm install
 
