@@ -5,7 +5,7 @@ banner:
   content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
   image: "/images/banner.png"
   button:
-    enable: true
+    enable: false
     label: "算力部署计算器"
     link: "https://github.com/zeon-studio/hugoplate"
 
@@ -23,12 +23,8 @@ features:
       - "**Open-source and free** for personal and commercial use"
     button:
       enable: true
-      label: "部署手册(昇腾)"
+      label: "部署手册"
       link: "#"
-    button2:
-      enable: true
-      label: "部署手册(英伟达)"
-      link: "https://github.com/zeon-studio/hugoplate"
 
   - title: "Discover the Key Features Of Hugo"
     image: "/images/service-2.png"
@@ -51,7 +47,7 @@ features:
       - "Use any front-end library or framework, or build custom components, for any project size."
       - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
     button:
-      enable: false
-      label: ""
+      enable: true
+      label: "算力部署计算器"
       link: ""
 ---
