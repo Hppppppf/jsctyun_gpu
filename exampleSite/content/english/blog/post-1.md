@@ -1,6 +1,6 @@
 ---
 title: "DeepSeek部署"
-meta_title: ""
+meta_title: "DeepSeek部署"
 description: "华为昇腾910B部署DeepSeek"
 date: 2025-03-03T08:00:00Z
 image: "/images/image-placeholder.png"
@@ -10,9 +10,9 @@ tags: ["部署", "华为", "昇腾"]
 draft: false
 ---
 
-## 一、部署DS整体架构图
+## 部署DS整体架构图
 
-### 1、模型server部署过程：
+### 模型server部署过程：
 
 - 昇腾从下往上：昇腾硬件设备 → 昇腾驱动与固件 → CANN → MindIE（华为推理引擎） → Server API
 - 英伟达从下往上：Nvidia设备 → 驱动 →CUDA → VLLM（开源推理引擎） → Server API
@@ -20,14 +20,14 @@ draft: false
     ![image.png](/images/h_0.png)
     
 
-## 二、DeepSeek模型部署
+## DeepSeek模型部署
 
-### 1、集群配置
+### 集群配置
 
 - DeepSeek 671B@FP16： 4台910B物理机
 - DeepSeek 671B@int8：2台910B物理机
 
-### 2、机器整备
+### 机器整备
 
 - 硬盘挂载确保权重空间充足
 
@@ -65,7 +65,7 @@ vi /tec/fstab
 添加挂载点即可
 ```
 
-### 2、模型权重下载
+### 模型权重下载
 
 由于DeepSeek官方权重为FP8精度，昇腾910B暂不支持FP8精度，需要转换成FP16或量化INT8，建议直接通过华为obsutil下载量化后的INT8权重，加快部署
 
@@ -113,7 +113,7 @@ ds-v3-w8a8:
 https://e-share.obs-website.cn-north-1.myhuaweicloud.com?token=Mc5ctYe33RbxIwXZuyovVDBfEZ3fmYjNQriqEQ22huEhWyF9gWh8ox793kHEZnHV66r9jcGlbKF9+X/an5VO6hSPhH/TOiiJBrv5Kxn/pGLrRSeSAZt6ZC8tlG1WccUeIy6/GHvqpG6tTY5tXBO1WXEFa3n/B16vpj0UDDAXvN7Ye/sTBrxxWP4HJaxF7PZCKucsNMN7yCjc9vxlwhZ/qiPe5/LI0SzHK7BtY9HSPGVaSWnp7yRRCLyFGSAti6u9eTZ6qKgJ7l+Ch0TlXNqSlZCsZd3f8G0NKMtILzgXUECgoggsWgP6ZZCbvpeSF0g9xIebIpGauCvcrFPp82ztPD5n/LQo5xXDlc4cZpcL8lHZ4tskq4K66uA0twX2xPBMUaJzNrPCWP88jKqg6l1pv3HkIfMNmJS+rvwfAXZGDH1m9iKiqO+UVDU0tmwXyKnXPKwog4u3+WDMZOGKoJMksClbKVMKXdIWFIYLbKEE3Qirq/9zzuvwJo02lonIzI+FoUXu8vCSoJE9wf/d+KKEaYeaSiHRvFiIc4nNcio0sT9vaUqXNXS0//lo1KZQZ5/dhE0rUWI6f/HXL/fTXQRuBNMYeiEHEU6wymRhc+qsogF2VbS6JD2SVhOyFpFY9BAmwkaLC0AXeaCWC6A4VKo88ypHlU2M64/xc/8Z8t2U3oLp+hdZjzSMnG5lh49IULxvjVxRyLrKTDtRAIvSPbEYuz2+S/HNLyqrmg/hmjtYvLOilX5UkGFzj1t1bq+J0DHumgYngnRkn/qRPCA1wmZtsw==
 ```
 
-### 3、模型权重分发节点
+### 模型权重分发节点
 
 - 将模型权重分发到所有节点的相同路径下
 - 将权重路径设置组与权限
@@ -123,7 +123,7 @@ chown -R 1001:1001 /path-to-weights/DeepSeek-R1
 chmod -R 750 /path-to-weights/DeepSeek-R1
 ```
 
-### 4、拉取MindIe镜像
+### 拉取MindIe镜像
 
 华为已在昇腾社区提供Docker镜像，部署过程中需申请下载权限，如审批过慢，可联系云省分使用省分账号拉取镜像
 
@@ -132,7 +132,7 @@ chmod -R 750 /path-to-weights/DeepSeek-R1
 
 ![image.png](/images/h_1.png)
 
-### 4、多机通信检查
+### 多机通信检查
 
 - 健康状态检查
 
@@ -158,7 +158,7 @@ npu-smi set -t reset -i 0 -c 0
 
 ```
 
-### 5、启动容器
+### 启动容器
 
 ```bash
 docker run -itd --privileged  --name=ds-v3-w8a8 --net=host \
@@ -187,7 +187,7 @@ docker run -itd --privileged  --name=ds-v3-w8a8 --net=host \
    docker exec -it ds-v3-w8a8 bash
 ```
 
-### 6、配置容器
+### 配置容器
 
 ```bash
 # 1、修改权重目录下的config.json
@@ -235,7 +235,7 @@ for i in {0..7};do hccn_tool -i $i -ip -g; done
 sudo chmod 640 /path of rank_table_file.json
 ```
 
-### 7、模型服务部署
+### 模型服务部署
 
 - 集群内所有机器皆需要执行下面操作
     
@@ -308,7 +308,7 @@ sudo chmod 640 /path of rank_table_file.json
     ```
     
 
-## 三、Open-Webui配置
+## Open-Webui配置
 
 ```bash
 # 安装C编译器
