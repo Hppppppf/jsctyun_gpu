@@ -10,8 +10,6 @@ tags: ["部署", "华为", "昇腾"]
 draft: false
 ---
 
-# DeepSeek部署
-
 ## 一、部署DS整体架构图
 
 ### 1、模型server部署过程：
