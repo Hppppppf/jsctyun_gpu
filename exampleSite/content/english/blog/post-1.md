@@ -71,7 +71,7 @@ vi /tec/fstab
 
 - 官方源下载方法：
     
-    [模型权重官方仓库下载](../../exampleSite/content/english/pages/模型权重官方仓库下载.md)
+    [模型权重官方仓库下载](../../blog/post-2/)
     
 - 华为obs权重下载
 
