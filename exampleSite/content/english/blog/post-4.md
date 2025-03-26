@@ -36,7 +36,6 @@ draft: false
                 <option value="r1_70b">DeepSeek R1 70B (蒸馏)</option>
             </select>
         </div>
-
         <div class="input-section">
             <label for="precision">参数精度:</label>
             <select id="precision">
@@ -47,12 +46,10 @@ draft: false
                 <option value="int4">INT4</option>
             </select>
         </div>
-
         <div class="input-section">
             <label for="concurrency">并发数:</label>
             <input type="number" id="concurrency" value="1" min="1">
         </div>
-
         <div class="input-section">
             <label for="context-length">上下文长度 (Token数):</label>
             <select id="context-length">
@@ -62,7 +59,6 @@ draft: false
                 <option value="65536">64K (65536)</option>
             </select>
         </div>
-
         <div class="input-section">
             <label for="framework">推理框架 (影响性能，显存管理):</label>
             <select id="framework">
@@ -74,7 +70,6 @@ draft: false
                 <option value="mindspore">MindSpore (华为昇腾)</option>
             </select>
         </div>
-
         <div class="input-section">
             <label for="fine-tuning-method">微调方法:</label>
             <select id="fine-tuning-method">
@@ -82,12 +77,10 @@ draft: false
                 <option value="lora">LoRA 微调</option>
             </select>
         </div>
-
         <div class="input-section" id="lora-params-section" style="display: none;">
             <label for="lora-trainable-params">LoRA 可训练参数 (Billion):</label>
             <input type="number" id="lora-trainable-params" value="0" min="0" step="0.1">
         </div>
-
         <div class="input-section">
             <label for="hardware">算力卡:</label>
             <select id="hardware">
@@ -103,7 +96,6 @@ draft: false
                 <option value="nvidia_a100_40g">NVIDIA A100-40G</option>
             </select>
         </div>
-
         <!-- 新增选项：显存预估模式 -->
         <div class="input-section">
             <label for="memory-estimation-mode">显存预估模式:</label>
@@ -113,13 +105,11 @@ draft: false
             </select>
             <small class="help-text">实际模式考虑推理框架的内存预分配和重用特性，更接近真实部署；理论模式假设显存随并发线性增长</small>
         </div>
-
         <button id="calculate-button">计算算力需求</button>
         <div id="results" class="results-section">
             <!-- 计算结果将显示在这里 -->
         </div>
     </div>
-	
     <script src="/css/script.js"></script>
 </body>
 </html>
