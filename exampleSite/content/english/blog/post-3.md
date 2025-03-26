@@ -9,19 +9,19 @@ author: "John Doe"
 tags: ["英伟达", "部署"]
 draft: false
 ---
-## 一、整体架构
+## 整体架构
 
 ![image.png](/images/n_0.png)
 
-## 二、环境要求
+## 环境要求
 
 - cuda12.1
 - python3.12
 - pytorch2.1+
 
-## 三、模型部署
+## 模型部署
 
-### 1、机器环境准备
+### 机器环境准备
 
 - 驱动安装
 
@@ -118,7 +118,7 @@ pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https
 pip install vllm
 ```
 
-### 2、模型部署
+### 模型部署
 
 - 模型下载
 
@@ -172,7 +172,7 @@ completion = client.chat.completions.create(
 print(completion.choices[0].message)
 ```
 
-### 3、部署OpenWebui及配置
+### 部署OpenWebui及配置
 
 ```bash
 略
