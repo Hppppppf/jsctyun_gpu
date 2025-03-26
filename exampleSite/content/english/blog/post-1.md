@@ -19,7 +19,7 @@ draft: false
 - 昇腾从下往上：昇腾硬件设备 → 昇腾驱动与固件 → CANN → MindIE（华为推理引擎） → Server API
 - 英伟达从下往上：Nvidia设备 → 驱动 →CUDA → VLLM（开源推理引擎） → Server API
     
-    ![image.png](exampleSite/assets/images/h_0.png)
+    ![image.png](/images/h_0.png)
     
 
 ## 二、DeepSeek模型部署
@@ -73,7 +73,7 @@ vi /tec/fstab
 
 - 官方源下载方法：
     
-    [模型权重官方仓库下载](exampleSite/content/english/blog/post_2.md)
+    [模型权重官方仓库下载](post_2.md)
     
 - 华为obs权重下载
 
@@ -132,7 +132,7 @@ chmod -R 750 /path-to-weights/DeepSeek-R1
 - 镜像地址[https://www.hiascend.com/developer/ascendhub/detail/af85b724a7e5469ebd7ea13c3439d48f](https://www.hiascend.com/developer/ascendhub/detail/af85b724a7e5469ebd7ea13c3439d48f)
 - 拉取镜像
 
-![image.png](exampleSite/assets/images/h_1.png)
+![image.png](/images/h_1.png)
 
 ### 4、多机通信检查
 
@@ -387,7 +387,7 @@ server {
 
 - Nginx启动会默认使用80端口，可将/etc/nginx/nginx.conf文件里的include /etc/nginx/sites-enabled/*注释掉：
 
-![image.png](exampleSite/assets/images/h_2.png)
+![image.png](/images/h_2.png)
 
 ### 修改容器配置
 
@@ -396,5 +396,5 @@ server {
 vim /usr/local/Ascend/mindie/latest/mindie-service/conf/config.json
 ```
 
-![image.png](exampleSite/assets/images/h_3.png)
+![image.png](/images/h_3.png)
 
