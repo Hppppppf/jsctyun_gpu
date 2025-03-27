@@ -7,7 +7,7 @@ banner:
   button:
     enable: false
     label: "算力部署计算器"
-    link: "https://github.com/zeon-studio/hugoplate"
+    link: ""
 
 # Features
 features:
@@ -18,7 +18,7 @@ features:
     button:
       enable: true
       label: "算力部署计算器"
-      link: "https://hppppppf.github.io/test.github.io/blog/post-4/"
+      link: "/blog/post-4/"
     
   - title: "DeepSeek模型部署手册"
     image: "/images/service-1.png"
@@ -29,10 +29,10 @@ features:
     button:
       enable: true
       label: "部署手册"
-      link: "https://hppppppf.github.io/test.github.io/categories/部署手册/"
-  - title: "云产品问答助手"
+      link: "/categories/部署手册"
+  - title: "天翼云知识问答助手"
     image: "/images/service-2.png"
-    content: ""
+    content: "敬请期待"
     bulletpoints:
     button:
       enable: false
