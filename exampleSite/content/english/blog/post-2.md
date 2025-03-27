@@ -23,6 +23,7 @@ huggingface_hub
 	weights_url.yaml
 ```
 
+
 ```yaml
 HuggingFace: deepseek-ai/DeepSeek-V3
 ModelScope: deepseek-ai/DeepSeek-V3
