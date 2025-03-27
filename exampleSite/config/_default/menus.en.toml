@@ -17,8 +17,8 @@ url = "https://hppppppf.github.io/test.github.io/categories/部署手册/"
 weight = 3
 
 [[main]]
-name = "Elements"
-url = "/elements"
+name = "智能体"
+url = "http://180.97.52.141:9999/apps"
 weight = 4
 
 [[main]]
@@ -29,6 +29,11 @@ name = "Pages"
 parent = "Pages"
 name = "Blog"
 url = "/blog"
+
+[[main]]
+parent = "Pages"
+name = "element"
+url = "/element"
 
 [[main]]
 parent = "Pages"
