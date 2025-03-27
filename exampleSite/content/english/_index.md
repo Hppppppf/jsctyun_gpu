@@ -24,7 +24,7 @@ features:
     button:
       enable: true
       label: "部署手册"
-      link: "#"
+      link: "https://hppppppf.github.io/test.github.io/categories/部署手册/"
 
   - title: "Discover the Key Features Of Hugo"
     image: "/images/service-2.png"
@@ -36,7 +36,7 @@ features:
     button:
       enable: true
       label: "息壤智算问答"
-      link: "https://github.com/zeon-studio/hugoplate"
+      link: "http://180.97.52.141:9999/chat/roYBQdzZhdh4Bdide"
 
   - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
     image: "/images/service-3.png"
@@ -49,5 +49,5 @@ features:
     button:
       enable: true
       label: "算力部署计算器"
-      link: ""
+      link: "https://hppppppf.github.io/test.github.io/blog/post-4/"
 ---
