@@ -62,21 +62,21 @@
                 </ul>
               </div>
             {{ end }}
-            <div class="lg:col-6 flex items-center">
+<!--             <div class="lg:col-6 flex items-center">
               {{ partial "social-share" (dict "Context" . "Class" "share-icons lg:ml-auto" "Title" (T "share") "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false) }}
-            </div>
+            </div> -->
           </div>
           <!-- comments -->
-          {{ if site.Config.Services.Disqus.Shortname }}
+<!--           {{ if site.Config.Services.Disqus.Shortname }}
             <div class="mt-20">
               {{ template "_internal/disqus.html" . }}
             </div>
-          {{ end }}
+          {{ end }} -->
         </article>
       </div>
 
       <!-- Related posts -->
-      {{ $related := .Site.RegularPages.Related . | first 10 }}
+<!--       {{ $related := .Site.RegularPages.Related . | first 10 }}
       {{ $related = $related | shuffle | first 3 }}
       {{ with $related }}
         <div class="section pb-0">
@@ -89,7 +89,7 @@
             {{ end }}
           </div>
         </div>
-      {{ end }}
+      {{ end }} -->
     </div>
   </section>
 {{ end }}
