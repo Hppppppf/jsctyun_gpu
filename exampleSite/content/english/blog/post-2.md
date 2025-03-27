@@ -3,7 +3,6 @@ title: "模型权重官方仓库下载"
 meta_title: ""
 description: "模型权重官方仓库下载"
 date: 2025-03-03T08:00:00Z
-image: "/images/image-placeholder.png"
 categories: ["部署"]
 author: "武永强"
 tags: ["部署", "模型", "下载"]
