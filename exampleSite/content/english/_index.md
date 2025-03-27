@@ -36,7 +36,7 @@ features:
     button:
       enable: true
       label: "息壤智算问答"
-      link: "http://180.97.52.141:9999/chat/roYBQdzZhdh4Bdide"
+      link: "http://180.97.52.141:9999/chat/roYBQdzZhdh4Bdid"
 
   - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
     image: "/images/service-3.png"
