@@ -9,7 +9,7 @@ tags: ["英伟达", "部署"]
 draft: false
 ---
 
-绍了基于英伟达设备的 DeepSeek 模型部署的整体架构，环境要求为 cuda12.1、python3.12、pytorch2.1+，具体包括机器环境准备（查看系统、GPU 型号，安装或删除驱动，禁用开源驱动，停止可视化界面等）、cuda 安装（获取并安装 runfile 文件，配置环境变量并验证）、环境管理 miniconda（下载、校验、安装及配置环境变量）、创建虚拟环境并安装 pytorch、安装 vllm，模型部署包含安装 modelscope 并下载权重，在线推理服务（部署 openai api server 及后台运行）、模型调用（编写 infer_test.py 调用模型），还提及了部署 OpenWebui 。
+介绍了基于英伟达设备的 DeepSeek 模型部署的整体架构，环境要求为 cuda12.1、python3.12、pytorch2.1+，具体包括机器环境准备（查看系统、GPU 型号，安装或删除驱动，禁用开源驱动，停止可视化界面等）、cuda 安装（获取并安装 runfile 文件，配置环境变量并验证）、环境管理 miniconda（下载、校验、安装及配置环境变量）、创建虚拟环境并安装 pytorch、安装 vllm，模型部署包含安装 modelscope 并下载权重，在线推理服务（部署 openai api server 及后台运行）、模型调用（编写 infer_test.py 调用模型），还提及了部署 OpenWebui 。
 
 ## 整体架构
 
