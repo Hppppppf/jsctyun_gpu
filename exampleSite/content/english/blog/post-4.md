@@ -3,7 +3,6 @@ title: "江苏电信云省分DeepSeek推理算力部署计算器"
 meta_title: ""
 description: "this is meta description"
 date: 2025-03-18T08:00:00Z
-image: "/images/image-placeholder.png"
 categories: ["部署"]
 tags: ["部署", "计算器"]
 draft: false
