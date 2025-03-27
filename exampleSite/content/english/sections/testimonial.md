@@ -8,7 +8,7 @@ testimonials:
   - name: "政务行业"
     designation: ""
     avatar: "/images/avatar-sm.png"
-    content: "“智能客服”、“公文写作”、“智慧会议”、“辅助决策”，大模型支持多源、多模态、跨领域、联动分析的复杂数据治理，实现数据洞察动态实时的响应"
+    content: "“智能客服”、“公文写作”、“智慧会议”、“辅助决策”，复杂数据治理，动态实时响应"
 
   - name: "政法公安"
     designation: ""
