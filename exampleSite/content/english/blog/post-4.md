@@ -10,4 +10,4 @@ tags: ["部署", "计算器"]
 draft: false
 ---
 
-<iframe src="https://hppppppf.github.io/jsctyun_deepseek/ds_cal.html" width="100%" height="100%" scrolling="auto"></iframe>
+<iframe src="https://hppppppf.github.io/jsctyun_deepseek/ds_cal.html" width="100%" height="2000px" scrolling="auto"></iframe>
