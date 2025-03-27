@@ -37,7 +37,7 @@ preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation button
 [navigation_button]
-enable = false
+enable = true
 label = "联系我们"
 link = "https://dcnavza13y3v.feishu.cn/share/base/form/shrcnFh75BPQhtI0fIPbbUbkEtd"
 
