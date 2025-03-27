@@ -1,29 +1,29 @@
 ---
 enable: true
-title: "客户案例"
+title: "应用场景"
 description: "Don't just take our word for it - hear from some of our satisfied users!  Check out some of our testimonials below to see what others are saying about Hugoplate."
 
 # Testimonials
 testimonials:
-  - name: "客户1"
-    designation: "Web Designer"
+  - name: "政务行业"
+    designation: ""
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "“智能客服”、“公文写作”、“智慧会议”、“辅助决策”。"
 
-  - name: "客户2"
-    designation: "Web Designer"
+  - name: "政法公安"
+    designation: ""
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "“案件分析”、“图像分析”、“图像智能检索”、 “量刑辅助决策”、“庭审记录”、“智能问答”"
 
-  - name: "客户3"
-    designation: "Web Designer"
+  - name: "卫健行业"
+    designation: ""
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "智能诊断辅助”、“智能导诊”、“医疗资源动态 优化”、“患者风险预警”、“智能随访”"
 
-  - name: "客户4"
-    designation: "Web Designer"
+  - name: "教育行业"
+    designation: ""
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "“仿真预测”、“教学辅助”、“知识图谱”、“虚拟 实训”、“智能备课”、“防霸凌”"
 
 # don't create a separate page
 _build:
