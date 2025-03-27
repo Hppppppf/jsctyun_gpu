@@ -13,7 +13,7 @@ weight = 2
 
 [[main]]
 name = "部署手册"
-url = "https://hppppppf.github.io/test.github.io/categories/部署手册/"
+url = "/categories/部署手册"
 weight = 3
 
 [[main]]
