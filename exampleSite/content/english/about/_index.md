@@ -1,9 +1,8 @@
 ---
-title: "Hey, I am John Doe!"
-meta_title: "About"
+title: "DeepSeek算力部署计算器"
+meta_title: "部署计算器"
 description: "this is meta description"
-image: "/images/avatar.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+<iframe src="https://hppppppf.github.io/jsctyun_deepseek/ds_cal.html" width="100%" height="1000px" scrolling="auto"></iframe>
