@@ -16,44 +16,44 @@ name = "部署手册"
 url = "/categories/部署手册"
 weight = 3
 
-[[main]]
-name = "智能体"
-url = "http://180.97.52.141:9999/apps"
-weight = 4
+# [[main]]
+# name = "智能体"
+# url = "http://180.97.52.141:9999/apps"
+# weight = 4
 
-[[main]]
-weight = 5
-name = "Pages"
+# [[main]]
+# weight = 5
+# name = "Pages"
 
-[[main]]
-parent = "Pages"
-name = "Blog"
-url = "/blog"
+# [[main]]
+# parent = "Pages"
+# name = "Blog"
+# url = "/blog"
 
-[[main]]
-parent = "Pages"
-name = "element"
-url = "/element"
+# [[main]]
+# parent = "Pages"
+# name = "element"
+# url = "/element"
 
-[[main]]
-parent = "Pages"
-name = "Contact"
-url = "/contact"
+# [[main]]
+# parent = "Pages"
+# name = "Contact"
+# url = "/contact"
 
-[[main]]
-parent = "Pages"
-name = "Authors"
-url = "/authors"
+# [[main]]
+# parent = "Pages"
+# name = "Authors"
+# url = "/authors"
 
-[[main]]
-parent = "Pages"
-name = "Categories"
-url = "/categories"
+# [[main]]
+# parent = "Pages"
+# name = "Categories"
+# url = "/categories"
 
-[[main]]
-parent = "Pages"
-name = "404 Page"
-url = "/404"
+# [[main]]
+# parent = "Pages"
+# name = "404 Page"
+# url = "/404"
 
 
 # footer menu
