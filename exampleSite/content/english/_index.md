@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "江苏电信云省分<br>DeepSeek工具集"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
+  title: "江苏电信云省分<br>智算助手"
+  content: ""
   image: "/images/banner.png"
   button:
     enable: false
@@ -11,24 +11,20 @@ banner:
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
+  - title: "DeepSeek模型部署手册"
     image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+    content: ""
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "华为"
+      - "英伟达"
     button:
       enable: true
       label: "部署手册"
       link: "https://hppppppf.github.io/test.github.io/categories/部署手册/"
-
-  - title: "Discover the Key Features Of Hugo"
+```
+  - title: "息壤智算问答"
     image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+    content: "知识问答助手"
     bulletpoints:
       - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
       - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
@@ -37,15 +33,17 @@ features:
       enable: true
       label: "息壤智算问答"
       link: "http://180.97.52.141:9999/chat/roYBQdzZhdh4Bdid"
-
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
+```
+  - title: "算力部署计算器"
     image: "/images/service-3.png"
+    ```
     content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
     bulletpoints:
       - "Instantly load static sites for better user experience and SEO."
       - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
       - "Use any front-end library or framework, or build custom components, for any project size."
       - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+  ```
     button:
       enable: true
       label: "算力部署计算器"
