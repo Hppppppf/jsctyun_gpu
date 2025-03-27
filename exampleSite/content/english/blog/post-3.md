@@ -18,6 +18,7 @@ draft: false
 - cuda12.1
 - python3.12
 - pytorch2.1+
+  
 
 ## 模型部署
 
