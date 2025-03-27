@@ -18,7 +18,7 @@ features:
     button:
       enable: true
       label: "算力部署计算器"
-      link: "../blog/post-4/"
+      link: "/about"
     
   - title: "DeepSeek模型部署手册"
     image: "/images/service-1.png"
