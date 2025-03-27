@@ -4,7 +4,7 @@ meta_title: ""
 description: "this is meta description"
 date: 2025-03-04T08:00:00Z
 image: "/images/image-placeholder.png"
-categories: ["部署"]
+categories: ["部署手册"]
 author: "武永强"
 tags: ["英伟达", "部署"]
 draft: false
