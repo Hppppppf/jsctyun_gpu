@@ -18,7 +18,7 @@ features:
     button:
       enable: true
       label: "算力部署计算器"
-      link: "/about"
+      link: "../../about"
     
   - title: "DeepSeek模型部署手册"
     image: "/images/service-1.png"
@@ -29,7 +29,7 @@ features:
     button:
       enable: true
       label: "部署手册"
-      link: "../categories/部署手册"
+      link: "../../categories/部署手册"
   - title: "天翼云知识问答助手"
     image: "/images/service-2.png"
     content: "敬请期待"
