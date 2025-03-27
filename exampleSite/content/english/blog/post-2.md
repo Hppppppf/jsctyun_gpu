@@ -10,7 +10,7 @@ tags: ["部署", "模型", "下载"]
 draft: false
 ---
 
-模型权重官方仓库下载指导
+weights-download.py 用于从不同模型仓库下载模型权重，需配合 weights_url.yaml 文件使用。脚本借助 argparse、os、shutil、yaml 和 huggingface_hub 等库，支持从 HuggingFace、ModelScope 和 Modelers 下载模型。其会先检测本地权重文件夹是否存在 .safetensors 文件，若存在则跳过下载；若未指定仓库，会依据 weights_url.yaml 里的配置尝试下载；也可通过命令行参数指定仓库和模型 ID 下载。下载完成后，会修改目标文件夹内文件的权限为 0o750。
 
 ```markdown
 ## requirements
