@@ -17,7 +17,7 @@ draft: false
 <head>
 <meta charset="UTF-8">
     <title>江苏电信云省分DeepSeek推理算力部署计算器</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     <div class="container">
@@ -110,6 +110,6 @@ draft: false
             <!-- 计算结果将显示在这里 -->
         </div>
     </div>
-    <script src="../css/script.js"></script>
+    <script src="../../css/script.js"></script>
 </body>
 </html>
