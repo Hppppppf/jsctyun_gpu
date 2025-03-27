@@ -10,6 +10,8 @@ tags: ["部署", "模型", "下载"]
 draft: false
 ---
 
+模型权重官方仓库下载指导
+
 ```markdown
 ## requirements
 argparse 
