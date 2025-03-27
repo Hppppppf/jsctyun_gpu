@@ -5,7 +5,7 @@ description: "this is meta description"
 date: 2025-03-18T08:00:00Z
 image: "/images/image-placeholder.png"
 categories: ["部署"]
-author: "John Doe"
+<!--author: "John Doe"-->
 tags: ["部署", "计算器"]
 draft: false
 ---
