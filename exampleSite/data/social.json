@@ -1,11 +1,6 @@
 {
   "main": [
     {
-      "name": "ctyun",
-      "icon": "/images/logo.svg",
-      "link": "https://www.ctyun.cn/act/xirang/deepseek"
-    },
-    {
       "name": "weixin",
       "icon": "fab fa-weixin",
       "link": "https://mp.weixin.qq.com/s/oONu21A7MtCg37bq2P2EeA"
