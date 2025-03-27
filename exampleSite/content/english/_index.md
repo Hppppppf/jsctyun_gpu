@@ -3,7 +3,7 @@
 banner:
   title: "江苏电信云省分<br>智算助手"
   content: ""
-  image: "/images/banner.png"
+  image: "/images/banner.jpg"
   button:
     enable: false
     label: "算力部署计算器"
