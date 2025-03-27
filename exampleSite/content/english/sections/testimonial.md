@@ -8,7 +8,7 @@ testimonials:
   - name: "政务行业"
     designation: ""
     avatar: "/images/avatar-sm.png"
-    content: "“智能客服”、“公文写作”、“智慧会议”、“辅助决策”。"
+    content: "“智能客服”、“公文写作”、“智慧会议”、“辅助决策”"
 
   - name: "政法公安"
     designation: ""
