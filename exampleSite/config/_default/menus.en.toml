@@ -26,6 +26,11 @@ name = "敬请期待"
 weight = 5
 
 [[main]]
+name = "市场动态"
+parent = "敬请期待"
+url = "#"
+
+[[main]]
 name = "算力百科"
 parent = "敬请期待"
 url = "#"
