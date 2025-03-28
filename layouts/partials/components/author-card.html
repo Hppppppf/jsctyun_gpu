@@ -16,7 +16,7 @@
   <p class="mb-4">
     {{ .Summary }}
   </p>
-  {{ with .button }}
+  {{ .Button }}
               {{ if .enable }}
                 <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
                   {{ .label }}
