@@ -16,10 +16,10 @@ name = "部署手册"
 url = "/categories/部署手册"
 weight = 3
 
-# [[main]]
-# name = "智能体"
-# url = "http://180.97.52.141:9999/apps"
-# weight = 4
+[[main]]
+name = "公文写作助手"
+url = "http://121.237.183.224:18888/ui/chat/312575ce9d2b927a"
+weight = 4
 
 # [[main]]
 # weight = 5
