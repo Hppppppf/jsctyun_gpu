@@ -3,7 +3,7 @@ title: "公文写作助手"
 meta_title: "公文写作助手"
 description: "公文写作助手"
 date: 2025-03-28T08:00:00Z
-categories: ["智算应用"]
+categories: ["典型应用"]
 draft: false
 ---
 
