@@ -17,6 +17,10 @@
         </a>
       </li> -->
       <li class="mr-4 inline-block">
+            <i class="fa-regular fa-clock mr-2"></i>
+            {{ time.Format ":date_long" .PublishDate }}
+      </li>
+      <li class="mr-4 inline-block">
         <i class="fa-regular fa-folder mr-1"></i>
         {{ range $i,$p:= $categories }}
           <a
