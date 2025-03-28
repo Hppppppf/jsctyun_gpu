@@ -4,7 +4,6 @@ meta_title: "DeepSeek部署"
 description: "华为昇腾910B部署DeepSeek"
 date: 2025-03-03T08:00:00Z
 categories: ["部署手册"]
-author: "武永强"
 tags: ["部署", "华为", "昇腾"]
 draft: false
 ---
