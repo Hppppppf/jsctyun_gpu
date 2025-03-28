@@ -16,11 +16,10 @@
   <p class="mb-4">
     {{ .Summary }}
   </p>
-  {{ .button }}
-              {{ if .enable }}
-                <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
-              {{ end }}
+{{ if .Params.button.enable }}
+    <a class="btn btn-primary mt-6" href="{{ .Params.button.link | absURL }}">
+      {{ .Params.button.label }}
+      <i class="fa fa-arrow-right pl-2"></i>
+    </a>
+  {{ end }}
 </div>
