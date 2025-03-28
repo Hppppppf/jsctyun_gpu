@@ -18,7 +18,7 @@ weight = 3
 
 [[main]]
 name = "典型应用"
-url = "http://121.237.183.224:18888/ui/chat/312575ce9d2b927a"
+url = "/authors"
 weight = 4
 
 [[main]]
