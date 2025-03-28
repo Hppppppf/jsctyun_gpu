@@ -16,14 +16,6 @@
   <p class="mb-4">
     {{ .Summary }}
   </p>
-  {{ .Button }}
-              {{ if .enable }}
-                <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
-              {{ end }}
-            {{ end }}
 <!--   <ul class="social-icons">
     {{ range .Params.social }}
       <li>
