@@ -32,9 +32,9 @@ weight = 6
 
 
 [[main]]
-name = "算力百科"
+name = "智算百科"
 parent = "敬请期待"
-url = "#"
+url = "/blog"
 
 [[main]]
 name = "智算资源"
