@@ -5,4 +5,4 @@ description: "this is meta description"
 draft: false
 ---
 
-<iframe src="/智算市场动态.html" width="100%" height="1000px" scrolling="auto"></iframe>
+<iframe src="exampleSite/assets/智算市场动态.html" width="100%" height="1000px" scrolling="auto"></iframe>
