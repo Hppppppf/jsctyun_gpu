@@ -7,28 +7,29 @@ url = "/"
 weight = 1
 
 [[main]]
+name = "市场动态"
+url = "/contact"
+weight = 2
+
+[[main]]
 name = "配置计算器"
 url = "/about"
-weight = 2
+weight = 3
 
 [[main]]
 name = "部署手册"
 url = "/categories/部署手册"
-weight = 3
+weight = 4
 
 [[main]]
 name = "典型应用"
 url = "/authors"
-weight = 4
-
-[[main]]
-name = "敬请期待"
 weight = 5
 
 [[main]]
-name = "市场动态"
-parent = "敬请期待"
-url = "#"
+name = "敬请期待"
+weight = 6
+
 
 [[main]]
 name = "算力百科"
