@@ -33,7 +33,7 @@ features:
     
   - title: "模型部署手册"
     image: "/images/service-1.png"
-    content: ""
+    content: "提供英伟达、昇腾及其他芯片的部署手册，及openweb ui、dify平台的部署指导"
     bulletpoints:
       - "华为"
       - "英伟达"
