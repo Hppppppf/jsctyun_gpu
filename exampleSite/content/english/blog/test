@@ -3,8 +3,8 @@ title: "test"
 meta_title: "模型部署手册（昇腾）"
 description: "华为昇腾910B部署DeepSeek"
 date: 2025-03-28T08:00:00Z
-categories: ["111",“222”]
-tags: ["部署", "333",“444”]
+categories: ["部署手册","111","222"]
+tags: ["部署","333","444"]
 draft: false
 ---
 
