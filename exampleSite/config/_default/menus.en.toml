@@ -8,7 +8,7 @@ weight = 1
 
 [[main]]
 name = "市场动态"
-url = "/contact"
+url = "/market"
 weight = 2
 
 [[main]]
