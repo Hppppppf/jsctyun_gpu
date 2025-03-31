@@ -13,7 +13,7 @@ weight = 2
 
 [[main]]
 name = "配置计算器"
-url = "/about"
+url = "/cal"
 weight = 3
 
 [[main]]
