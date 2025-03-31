@@ -23,7 +23,7 @@ weight = 4
 
 [[main]]
 name = "典型应用"
-url = "/authors"
+url = "/app"
 weight = 5
 
 [[main]]
