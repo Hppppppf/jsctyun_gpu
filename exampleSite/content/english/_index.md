@@ -12,7 +12,7 @@ banner:
 # Features
 features:
   - title: "算力部署计算器"
-    image: "/images/算力部署计算器.png"
+    image: "/images/service-3.png"
     content: ""
     bulletpoints:
     button:
