@@ -20,7 +20,7 @@ features:
     button:
       enable: true
       label: "立即查看"
-      link: "/market"
+      link: "https://hppppppf.github.io/test.github.io/market"
 
   - title: "算力部署计算器"
     image: "/images/service-3.png"
@@ -29,7 +29,7 @@ features:
     button:
       enable: true
       label: "算力部署计算器"
-      link: "/cal"
+      link: "https://hppppppf.github.io/test.github.io/cal"
     
   - title: "模型部署手册"
     image: "/images/service-1.png"
