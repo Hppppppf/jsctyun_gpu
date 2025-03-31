@@ -6,21 +6,32 @@ banner:
   image: "/images/banner.png"
   button:
     enable: false
-    label: "算力部署计算器"
+    label: ""
     link: ""
 
 # Features
 features:
+  - title: "市场动态"
+    image: "/images/service-3.png"
+    content: "新智算市场动态，包括不同型号智算设备采购及租赁的市场价格"
+    bulletpoints:
+      - "设备采购"
+      - "智算服务"
+    button:
+      enable: true
+      label: "立即查看"
+      link: "/market"
+
   - title: "算力部署计算器"
     image: "/images/service-3.png"
-    content: ""
+    content: "推理集群配置计算器"
     bulletpoints:
     button:
       enable: true
       label: "算力部署计算器"
-      link: "https://hppppppf.github.io/test.github.io/about/"
+      link: "/cal"
     
-  - title: "DeepSeek模型部署手册"
+  - title: "模型部署手册"
     image: "/images/service-1.png"
     content: ""
     bulletpoints:
@@ -30,6 +41,7 @@ features:
       enable: true
       label: "部署手册"
       link: "https://hppppppf.github.io/test.github.io/categories/部署手册/"
+
   - title: "天翼云知识问答助手"
     image: "/images/service-2.png"
     content: "敬请期待"
