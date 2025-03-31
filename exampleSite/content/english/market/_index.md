@@ -5,4 +5,4 @@ description: "this is meta description"
 draft: false
 ---
 
-<iframe src="https://hppppppf.github.io/jsctyun_deepseek/ds_cal.html" width="100%" height="1000px" scrolling="auto"></iframe>
+<iframe src="/智算市场动态.html" width="100%" height="1000px" scrolling="auto"></iframe>
