@@ -6,10 +6,11 @@
     <div class="container">
       <div class="row gx-5">
         <!-- blog posts -->
+         {{ $postColClass := "" }}
         {{ if site.Params.widgets.sidebar }}
-          {{ $postColClass := "lg:col-8" }}
+          {{ $postColClass = "lg:col-8" }}
         {{ else }}
-          {{ $postColClass := "lg:col-12" }}
+          {{ $postColClass = "lg:col-12" }}
         {{ end }}
         <div class="{{ $postColClass }}"> 
           <div class="row">
