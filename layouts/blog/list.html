@@ -7,9 +7,9 @@
         <!-- blog posts -->
         {{ $postColClass := "lg:col-12" }}
         {{ if and (isset site.Taxonomies "categories") (not (eq (len site.Taxonomies.categories) 0)) }}
-            {{ $postColClass = "lg:col-8" }}
+            {{ $postColClass = "lg:col-12" }}
         {{ else }}
-           {{ $postColClass = "lg:col-12" }}
+           {{ $postColClass = "lg:col-8" }}
         {{ end }}
         <div class="{{ $postColClass }}"> 
           <div class="row">
