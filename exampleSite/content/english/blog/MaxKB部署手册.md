@@ -2,8 +2,8 @@
 title: "MaxKB 安装部署指导手册"
 meta_title: "MaxKB 安装部署指导手册"
 description: "MaxKB 安装部署指导手册"
-date: 2025-04-01T08:00:00Z
-categories: ["智算应用"]
+date: 2025-04-01T15:03:00+08:00
+categories: ["部署手册"]
 tags: ["部署", "MaxKB"]
 draft: false
 ---
