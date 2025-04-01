@@ -2,22 +2,22 @@
   {{ partial "page-header" . }}
 
 {{ $sidebar := site.Params.widgets.sidebar }}
-{{ template.Println "开始处理 sidebar 参数" }}
+{{ printf "开始处理 sidebar 参数" | safeHTML }}
 {{ if reflect.IsSlice $sidebar }}
-    {{ template.Println "sidebar 是一个切片（列表）类型" }}
+    {{ printf "sidebar 是一个切片（列表）类型" | safeHTML }}
     {{ range $sidebar }}
-        {{ template.Println . }}
+        {{ printf "%v" . | safeHTML }}
     {{ end }}
 {{ else if reflect.IsMap $sidebar }}
-    {{ template.Println "sidebar 是一个映射类型" }}
+    {{ printf "sidebar 是一个映射类型" | safeHTML }}
     {{ range $key, $value := $sidebar }}
-        {{ template.Println $key, ":", $value }}
+        {{ printf "%s: %v" $key $value | safeHTML }}
     {{ end }}
 {{ else }}
-    {{ template.Println "sidebar 是其他类型" }}
-    {{ template.Println $sidebar }}
+    {{ printf "sidebar 是其他类型" | safeHTML }}
+    {{ printf "%v" $sidebar | safeHTML }}
 {{ end }}
-{{ template.Println "处理 sidebar 参数结束" }}
+{{ printf "处理 sidebar 参数结束" | safeHTML }}
 
   <section class="section">
     <div class="container">
