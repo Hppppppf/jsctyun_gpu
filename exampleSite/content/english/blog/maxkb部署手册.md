@@ -1,3 +1,13 @@
+---
+title: "MaxKB 安装部署指导手册"
+meta_title: "MaxKB 安装部署指导手册"
+description: "MaxKB 安装部署指导手册"
+date: 2025-04-01T08:00:00Z
+categories: ["智算应用"]
+tags: ["部署", "MaxKB"]
+draft: false
+---
+
 # MaxKB 安装部署指导手册
 
 ## 一、部署前准备
@@ -7,7 +17,7 @@
 - 操作系统：Ubuntu 22.04 / CentOS 7.6 64 位系统
 - CPU/内存：4C/8GB 以上
 - 磁盘空间：100GB
-
+  <!--more-->
 
 
 ### 2、端口要求
