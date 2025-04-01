@@ -1,5 +1,5 @@
 ---
-title: "智算百科"
-meta_title: "智算百科"
+title: "智算文章"
+meta_title: "智算文章"
 description: "this is meta description"
 ---
