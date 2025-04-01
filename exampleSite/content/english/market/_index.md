@@ -1,6 +1,6 @@
 ---
-title: "DeepSeek算力部署计算器"
-meta_title: "部署计算器"
+title: "市场动态"
+meta_title: "市场动态"
 description: "this is meta description"
 draft: false
 ---
