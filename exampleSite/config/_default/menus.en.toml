@@ -37,7 +37,7 @@ weight = 7
 
 
 [[main]]
-name = "文章"
+name = "智算文章"
 parent = "敬请期待"
 url = "/blog"
 
