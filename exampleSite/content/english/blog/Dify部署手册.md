@@ -3,7 +3,7 @@ title: "Dify 安装部署指导手册"
 meta_title: "Dify 安装部署指导手册"
 description: "Dify 安装部署指导手册"
 date: 2025-03-31T08:00:00Z
-categories: ["部署手册"]
+categories: ["部署手册","智算应用"]
 tags: ["部署", "Dify"]
 draft: false
 ---
