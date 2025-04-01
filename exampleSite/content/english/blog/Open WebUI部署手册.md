@@ -7,6 +7,7 @@ categories: ["智算应用"]
 tags: ["部署", "Open WebUI"]
 draft: false
 ---
+
 # Open WebUI安装部署指导手册
 Open WebUI 是一个可扩展、功能丰富且用户友好的自托管 AI 平台，旨在完全离线运行。它支持各种 LLM 运行器，如 Ollama 和 OpenAI 兼容的 API，并内置了 RAG 推理引擎，使其成为强大的 AI 部署解决方案。
 <!--more-->
@@ -19,9 +20,9 @@ Open WebUI 是一个可扩展、功能丰富且用户友好的自托管 AI 平�
 
 此文分享使用docker方式部署Open WebUI。
 
-## 一、部署前准备
+## 部署前准备
 
-### 1、硬件要求
+### 硬件要求
 
 在安装Open WebUI之前，请确保您的系统满足以下最低要求：
 
@@ -34,7 +35,7 @@ Open WebUI 是一个可扩展、功能丰富且用户友好的自托管 AI 平�
 
 
 
-### 2、软件要求
+### 软件要求
 
 - **Docker**: 版本19.03或更高
 - **Docker Compose**: 版本1.28或更高（或Docker Compose V2）
@@ -46,9 +47,9 @@ Docker Compose：一般 Docker 会自带 Docker Compose，如果没有，你可�
 
 
 
-## 二、安装部署
+## 安装部署
 
-### 1、拉取docker镜像
+### 拉取docker镜像
 
 原始镜像下载很慢，可使用代理方式拉取镜像：
 
@@ -72,9 +73,9 @@ docker rmi ghcr.dockerproxy.net/open-webui/open-webui:latest
 
 
 
-### 2、安装部署
+### 安装部署
 
-### （1）使用默认配置安装
+### 使用默认配置安装
 
 - **如果 Ollama 在您的计算机上**，请使用以下命令：
 
@@ -93,7 +94,7 @@ docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=https://example.com -v open-webui:
 
 
 
-### （2）安装仅用于 OpenAI API
+### 安装仅用于 OpenAI API
 
 - **如果您只使用 OpenAI API**，请使用以下命令：
 
@@ -109,7 +110,7 @@ docker run -d -p 3000:8080 -e OPENAI_API_KEY=your_secret_key -v open-webui:/app/
 
 
 
-### 3、登录访问
+### 登录访问
 
 服务启动成功后，通过浏览器访问：
 
