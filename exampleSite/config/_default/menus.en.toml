@@ -22,17 +22,22 @@ url = "/categories/部署手册"
 weight = 4
 
 [[main]]
-name = "典型应用"
-url = "/app"
+name = "算力百科"
+url = "/categories/算力百科"
 weight = 5
 
 [[main]]
-name = "敬请期待"
+name = "典型应用"
+url = "/app"
 weight = 6
+
+[[main]]
+name = "敬请期待"
+weight = 7
 
 
 [[main]]
-name = "智算百科"
+name = "文章"
 parent = "敬请期待"
 url = "/blog"
 
