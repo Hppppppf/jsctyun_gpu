@@ -5,13 +5,13 @@
     <div class="container">
       <div class="row gx-5">
         <!-- blog posts -->
-        {{ $postColClass := "lg:col-12" }}
-<!--         {{ if and (isset site.Taxonomies "categories") (not (eq (len site.Taxonomies.categories) 0)) }}
+<!--         {{ $postColClass := "lg:col-12" }}
+        {{ if and (isset site.Taxonomies "categories") (not (eq (len site.Taxonomies.categories) 0)) }}
             {{ $postColClass = "lg:col-8" }}
         {{ else }}
            {{ $postColClass = "lg:col-12" }}
         {{ end }} -->
-        <div class="lg:col-12"> 
+        <div class="lg:col-8"> 
           <div class="row">
             {{ $paginator:= .Paginate .RegularPages }}
             {{ range $paginator.Pages }}
