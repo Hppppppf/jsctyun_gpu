@@ -1,13 +1,13 @@
 ---
-title: "Open WebUI安装部署指导手册"
-meta_title: "Open WebUI安装部署指导手册"
-description: "Open WebUI安装部署指导手册"
+title: "Open WebUI 安装部署指导手册"
+meta_title: "Open WebUI 安装部署指导手册"
+description: "Open WebUI 安装部署指导手册"
 date: 2025-04-01T08:00:00Z
 categories: ["智算应用"]
 tags: ["部署", "Open WebUI"]
 draft: false
 ---
-
+# Open WebUI安装部署指导手册
 Open WebUI 是一个可扩展、功能丰富且用户友好的自托管 AI 平台，旨在完全离线运行。它支持各种 LLM 运行器，如 Ollama 和 OpenAI 兼容的 API，并内置了 RAG 推理引擎，使其成为强大的 AI 部署解决方案。
 <!--more-->
 1、框架开源：Open WebUI 是开源的，开发者可以自由使用它，适用于各种Web 应用开发；
