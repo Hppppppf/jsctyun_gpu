@@ -8,13 +8,19 @@
         <!-- blog posts -->
          {{ $postColClass := "" }}
         {{ if site.Params.widgets.sidebar }}
+          <p>
+            {{ range site.Params.widgets.sidebar }}
+              {{ . }}
+              {{ end }}
+          </p>
           {{ $postColClass = "lg:col-8" }}
         {{ else }}
           {{ $postColClass = "lg:col-12" }}
+          <p>NULLLLLLLLLLLL</p>
         {{ end }}
         <div class="{{ $postColClass }}"> 
           <div class="row">
-            <p>{{site.Params.widgets.sidebar}}</p>
+            
             {{ $paginator:= .Paginate .RegularPages }}
             {{ range $paginator.Pages }}
               <div class="md:col-6 mb-14">
