@@ -10,9 +10,9 @@ draft: false
 
 # MaxKB 安装部署指导手册
 
-## 一、部署前准备
+## 部署前准备
 
-### 1、部署服务器要求：
+### 部署服务器要求：
 
 - 操作系统：Ubuntu 22.04 / CentOS 7.6 64 位系统
 - CPU/内存：4C/8GB 以上
@@ -20,7 +20,7 @@ draft: false
   <!--more-->
 
 
-### 2、端口要求
+### 端口要求
 
 离线部署 MaxKB 需要开通的访问端口说明如下：
 
@@ -31,7 +31,7 @@ draft: false
 
 
 
-### 3、安装包下载
+### 安装包下载
 
 打开 [飞致云开源社区 MaxKB 社区版下载](https://community.fit2cloud.com/#/products/maxkb/downloads) 页面下载最新版本安装包，并上传至部署服务器。
 
@@ -43,9 +43,9 @@ draft: false
 
 
 
-## 二、安装部署
+## 安装部署
 
-### 1、解压安装包
+### 解压安装包
 
 以 root 用户通过 ssh 协议登录到部署服务器, 对安装包进行解压：
 
@@ -55,7 +55,7 @@ tar -zxvf maxkb-v1.10.2-lts-offline.tar.gz
 
 
 
-### 2、安装前配置
+### 安装前配置
 
 MaxKB 安装目录、服务运行端口、数据库配置等信息可在安装包解压后中的 install.conf 文件进行配置。
 
@@ -85,7 +85,7 @@ MAXKB_PGSQL_PASSWORD=Password123@postgres
 
 
 
-### 3、执行安装脚本
+### 执行安装脚本
 
 ```
 # 进入安装包解压缩后目录  
@@ -97,7 +97,7 @@ bash install.sh
 
 ![安装](https://maxkb.cn/docs/img/index/install.jpg)
 
-### 4、登录访问
+### 登录访问
 
 待所有容器状态显示为`healthy`后，即可通过浏览器访问地址 `http://目标服务器 IP 地址:8080`，并使用默认的管理员用户和密码登录 MaxKB。
 
@@ -137,7 +137,7 @@ docker run -itd --privileged  --name=ds-v3-w8a8 --net=host \
 
 
 
-## 三、离线升级（按需可选）
+## 离线升级（按需可选）
 
 离线升级与安装操作过程基本一样，即下载新版本安装包上传解压后，再次执行安装命令进行升级。
 
