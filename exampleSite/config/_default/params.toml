@@ -55,9 +55,9 @@ show_categories = true
 # announcement
 # announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
 [announcement]
-enable = enable
+enable = true
 expire_days = 7
-content = "You must replace the **baseURL** in **hugo.toml** file when deploying, you can manage this announcement from the **params.toml** file."
+content = "测试中"
 
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
@@ -82,9 +82,9 @@ mastodon = "" # Your verification code
 # cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
 [cookies]
 enable = false
-expire_days = 7
-content = "测试中"
-button = "知道了"
+expire_days = 60
+content = ""
+button = ""
 
 # diagrams
 [mermaid]
