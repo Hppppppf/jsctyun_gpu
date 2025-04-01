@@ -1,3 +1,13 @@
+---
+title: "Dify 安装部署指导手册"
+meta_title: "Dify 安装部署指导手册"
+description: "Dify 安装部署指导手册"
+date: 2025-04-01T08:00:00Z
+categories: ["部署手册","智算应用"]
+tags: ["部署", "Dify"]
+draft: false
+---
+
 # dify 安装部署指导手册
 
 Dify 是一个让你轻松构建 AI 应用的开源平台，简单来说就是给开发者打造的一站式AI应用开发工具。它主要有以下几个特点：
