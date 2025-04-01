@@ -1,10 +1,10 @@
 ---
 title: "Dify 安装部署指导手册"
-meta_title: "Dify 安装部署指导手册"
-description: "Dify 安装部署指导手册"
-date: 2025-04-01T08:00:00Z
-categories: ["部署手册","智算应用"]
-tags: ["部署", "Dify"]
+meta_title: "模型部署手册（昇腾）"
+description: "华为昇腾910B部署DeepSeek"
+date: 2025-03-28T08:00:00Z
+categories: ["部署手册"]
+tags: ["部署", "华为", "昇腾"]
 draft: false
 ---
 
