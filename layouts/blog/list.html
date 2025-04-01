@@ -6,11 +6,11 @@
     <div class="container">
       <div class="row gx-5">
         <!-- blog posts -->
-        {{ $postColClass := "lg:col-8" }}
+        {{ $postColClass := "lg:col-12" }}
         {{ if site.Params.widgets.sidebar }}
-          {{ $postColClass = "lg:col-12" }}
+          {{ $postColClass = "lg:col-8" }}
         {{ end }}
-<!--         <div class="lg:col-8"> -->
+        <div class="{{ $postColClass }}"> 
           <div class="row">
             {{ $paginator:= .Paginate .RegularPages }}
             {{ range $paginator.Pages }}
