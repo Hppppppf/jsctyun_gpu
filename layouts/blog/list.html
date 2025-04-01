@@ -1,29 +1,11 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-{{ $sidebar := site.Params.widgets.sidebar }}
-{{ printf "开始处理 sidebar 参数" | safeHTML }}
-{{ if reflect.IsSlice $sidebar }}
-    {{ printf "sidebar 是一个切片（列表）类型" | safeHTML }}
-    {{ range $sidebar }}
-        {{ printf "%v" . | safeHTML }}
-    {{ end }}
-{{ else if reflect.IsMap $sidebar }}
-    {{ printf "sidebar 是一个映射类型" | safeHTML }}
-    {{ range $key, $value := $sidebar }}
-        {{ printf "%s: %v" $key $value | safeHTML }}
-    {{ end }}
-{{ else }}
-    {{ printf "sidebar 是其他类型" | safeHTML }}
-    {{ printf "%v" $sidebar | safeHTML }}
-{{ end }}
-{{ printf "处理 sidebar 参数结束" | safeHTML }}
-
   <section class="section">
     <div class="container">
       <div class="row gx-5">
         <!-- blog posts -->
-         {{ $postColClass := "" }}
+         {{ $postColClass := "lg:col-12" }}
         {{ if site.Params.widgets.sidebar }}
           {{ $postColClass = "lg:col-8" }}
         {{ else }}
