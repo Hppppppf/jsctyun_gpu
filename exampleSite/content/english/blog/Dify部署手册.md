@@ -54,10 +54,6 @@ Docker Compose：一般 Docker 会自带 Docker Compose，如果没有，你可�
 
 可以直接下载源码https://github.com/langgenius/dify/releases/tag/1.1.3
 
-![image.png](https://i-blog.csdnimg.cn/img_convert/4adf65764f3b65272e47f153104d8c19.png)
-
-
-
 ## 安装部署
 
 ### 解压安装包
