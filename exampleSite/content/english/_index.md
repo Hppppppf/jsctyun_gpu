@@ -23,7 +23,7 @@ features:
       link: "https://hppppppf.github.io/test.github.io/market"
 
   - title: "算力部署计算器"
-    image: "/images/service-3.png"
+    image: "/images/service-2.png"
     content: "推理集群配置计算器"
     bulletpoints:
     button:
