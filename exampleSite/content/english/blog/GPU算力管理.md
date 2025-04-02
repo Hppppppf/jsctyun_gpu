@@ -10,15 +10,15 @@ draft: false
 
 # GPU算力管理
 
-# 1.算力管理概览
+## 算力管理概览
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A9c4f93a2-ca87-4708-844d-bacb9bc90720%3Aimage.png?table=block&id=1c86a624-db43-8033-88f8-e64a9fe34402&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
 抛开任务管理层面，也就是把上一节的‘云-边-端’和‘GPU集群任务调度’暂且不讨论，原因是这两部分已经不单单是某个产品，或某一个技术能实现的，这个需要客户从最开始的业务架构的规划、到AI任务管理平台，再到硬件层面的拓扑架构等多方面的技术整合和选型，才能满足所需的AI任务的预期管理。本节主要聚焦在为了满足业务的不同GPU资源使用的诉求，**单卡调度、单机多卡调度和多机多卡调度所发展出来的基础技术。**
 
-# 2.单GPU卡算力管理
+## 单GPU卡算力管理
 
-## 2.1. **MPS（单卡多线程并行）**
+### **MPS（单卡多线程并行）**
 
 多进程服务（MPS）是对 CUDA 应用编程接口（API）的一种替代性实现，并且与原有的二进制代码兼容。MPS 的运行时架构旨在透明地支持协作式的多进程 CUDA 应用，主要是消息传递接口（MPI）任务。MPS时Nvidia在Pascal架构引入的，并在Volta架构中进一步的完善。Volat-MPS相比较之前的MPS，主要在以下几个方面做了提升：
 
@@ -96,7 +96,7 @@ CUDA IPC支持：由MPS Client创建的CUDA Context与没有使用MPS 创建的C
 
 参考网站：https://docs.nvidia.com/deploy/mps/index.html
 
-## 2.2. **MIG（单卡单显存多租户线程物理隔离）**
+### **MIG（单卡单显存多租户线程物理隔离）**
 
 使用MIG，每个实例的处理器在整个内存系统中都有独立的路径——片上交叉开关端口、L2缓存库、内存控制器和DRAM地址总线都唯一分配给一个实例。这确保了单个用户的工作负载可以以可预测的吞吐量和延迟运行，具有相同的L2缓存分配和DRAM带宽，即使其他任务正在冲击自己的缓存或饱和其DRAM接口。MIG可以分割可用的GPU计算资源（包括流式多处理器或SM和GPU引擎，如复制引擎或解码器），以提供定义的服务质量（QoS），并为不同的客户端（如虚拟机、容器或进程）提供故障隔离。
 
@@ -147,9 +147,9 @@ GDR支持：当从GPU实例使用时，支持GPUDirect RDMA。
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A98bef4b5-3ede-443e-90cf-18959a9d46d1%3Aimage.png?table=block&id=1c86a624-db43-802b-890b-d48455fdab7d&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
-# 3. 单机多卡GPU算力管理
+## 单机多卡GPU算力管理
 
-## 3.1.  PCIE&NVLink&NVSwitch（单机多卡组合）
+### PCIE&NVLink&NVSwitch（单机多卡组合）
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3Abd0572d8-6b2a-4e89-9a20-2ffab21c31b2%3Aimage.png?table=block&id=1c86a624-db43-80a3-b67e-ca1c9a922d5d&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
@@ -161,9 +161,9 @@ PCIE设备在单机内可以实现多个设备的数据传输，比如上图就�
 
 但是虽然GPU之间绕过了PCIE网卡的限制，但是GPU之间的通信能力，取决于NVLink的数量，如图所示GPU0-GPU6只有1条NVLink，GPU3-GPU5之间有2条。在Ampere架构之后，Nvidia引入了NVSwitch，使单个机器内任何GPU卡之间的带宽链路获得了一致性，并且在Hopper架构中将NVLink引入到了机器之间，实现了服务器组的多GPU卡联通的一致性。这也是为什么客户AI任务需要了解底层GPU拓扑架构，不同的架构也需要适配不同的算力调度分配。
 
-# 4. 多机多卡GPU算力管理
+## 多机多卡GPU算力管理
 
-## 4.1. NVSwitch
+### NVSwitch
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A8f43be6f-bcb8-4df8-84da-d281fb7c3ce8%3Aimage.png?table=block&id=1c86a624-db43-8025-bdae-e9381aa22510&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
@@ -171,7 +171,7 @@ PCIE设备在单机内可以实现多个设备的数据传输，比如上图就�
 
 参考资料：https://resources.nvidia.com/en-us-grace-cpu/nvidia-grace-hopper?ncid=so-link-252431-vt04
 
-## 4.2. RDMA
+### RDMA
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3Ab56e644c-2cf4-4584-8f98-84ec6d81986f%3Aimage.png?table=block&id=1c86a624-db43-80ab-9cdc-d7834d7d714c&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
@@ -215,7 +215,7 @@ RDMA，全称 Remote Direct Memory Access（远程直接内存访问），是一
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A412d8f60-246f-4f79-b018-05cee6a1c5fc%3Aimage.png?table=block&id=1c86a624-db43-802d-97b1-ffd73aaf72c4&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1390&userId=&cache=v2)
 
-## 4.3. 阿里云eRDMA
+### 阿里云eRDMA
 
 eRDMA是阿里云自研的云上弹性RDMA网络，底层链路复用VPC网络，采用全栈自研的拥塞控制CC（Congestion Control）算法，享有传统RDMA网络高吞吐、低延迟特性的同时，可支持秒级的大规模RDMA组网。可兼容传统HPC应用、AI应用以及传统TCP/IP应用。
 
@@ -237,7 +237,7 @@ eRDMA是阿里云自研的云上弹性RDMA网络，底层链路复用VPC网络�
 
 官方已经提供比较详细的eRDMA信息，可以参考：https://help.aliyun.com/zh/ecs/user-guide/elastic-rdma-erdma/
 
-## 4.4.  GDR
+### GDR
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3Adb1e8cf0-4b9b-4f86-812c-d7c01ff8b2bb%3Aimage.png?table=block&id=1c86a624-db43-8085-a669-d8d949a45ce2&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
