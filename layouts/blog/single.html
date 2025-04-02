@@ -26,7 +26,7 @@
                 <i class="fa-regular fa-folder mr-2"></i>
                 {{ range $i,$p:= $categories }}
                   <a
-                    href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+                    href="{{ `categories/` | relLangURL }}{{ . | urlize}}/"
                     class=""
                     >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
                       {{ "," }}
@@ -54,7 +54,7 @@
                     <li class="inline-block">
                       <a
                         class="bg-light hover:bg-primary dark:bg-darkmode-light dark:hover:bg-darkmode-primary dark:hover:text-text-dark m-1 block rounded px-3 py-1 hover:text-white"
-                        href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
+                        href="{{ `tags/` | relLangURL }}{{ . | urlize}}/">
                         {{ . | humanize }}
                       </a>
                     </li>
