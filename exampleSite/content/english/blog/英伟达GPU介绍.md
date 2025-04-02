@@ -10,13 +10,13 @@ draft: false
 
 # 英伟达GPU介绍
 
-# 1. 架构演进
+# 架构演进
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A9c9ced77-ecf7-447f-bccf-93785651b9bb%3Aimage.png?table=block&id=1c86a624-db43-805d-8745-f7d8d542bfa9&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
-# 2. 主要架构
+# 主要架构
 
-## 2.1. **Pascal（2016）**
+## Pascal（2016）
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3Aa720f919-0951-43c5-9580-5a508402a3d7%3Aimage.png?table=block&id=1c86a624-db43-80de-861b-c53b9ce7f760&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
@@ -50,7 +50,7 @@ PCIE：表示最大双向32GB/s
 
 所以可以看到，如果GPU需要使用PCIE方式去读区其他GPU上的数据，必然数据传输速度收到了PCIE的影响。从物理架构层面受到PCIE链接带宽限制，AI任务调度方面要尽可能让任务调度到NVLink的关联GPU上。详情可参加nvidia官网介绍：https://images.nvidia.com/content/pdf/tesla/whitepaper/pascal-architecture-whitepaper-v1.2.pdf
 
-## 2.2. Volta（2017）
+## Volta（2017）
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A1e6ca697-a428-4626-9793-f081f6c5f1bb%3Aimage.png?table=block&id=1c86a624-db43-80ed-9da3-cd26980f3a44&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
@@ -64,7 +64,7 @@ V100 GPU 包含640个 Tensor core：每个SM有8个core，SM内的每个处理�
 
 NVLInk 2.0 GPU-to-GPU单向提高到25GB/s，相比较1.0提高了5GB/s，但是每个GPU可以链接Link数量提高了到了6条，所以单GPU双向最大带宽来到了25*2*6=300GB/s，相比Pascal架构提升了一倍左右。同时，引入NVSwitch1.0 旨在提高 GPU 之间的通信效率和性能。NVSwitch1.0 可以支持多达 16 个 GPU 之间的通信，可以实现 GPU 之间的高速数据传输。可以看到Nvidia除了疯狂的堆SM和core，也在想尽一切办法提升GPU-to-GPU之间的带宽，使数据尽可能在GPU间快速读取。隐约可以遇见，如何绕开PCIE，绕开CPU和内核切换是AI时代的瓶颈，毕竟大模型时代，数据量是几何倍数的增长。
 
-### 2.2.1. **NVLINK：第一代GPU-to-GPU**
+### NVLINK：第一代GPU-to-GPU
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A922f62e0-9e5e-4e83-b8de-ba9dce607417%3Aimage.png?table=block&id=1c86a624-db43-804a-81f1-c445082c68c0&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1050&userId=&cache=v2)
 
@@ -80,7 +80,7 @@ PCIE：表示最大双向32GB/s
 
 详情可参加nvidia官网介绍：https://www.nvidia.cn/content/dam/en-zz/zh_cn/Solutions/Data-Center/volta-gpu-architecture/Volta-Architecture-Whitepaper-v1.1-CN.compressed.pdf
 
-## 2.3. Turing（2018）
+## Turing（2018）
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A025781cf-a03e-4bec-b498-23c241be46f5%3Aimage.png?table=block&id=1c86a624-db43-80f5-a95e-f665c1bfaba7&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
@@ -100,7 +100,7 @@ Turing 架构中的 Tensor Core（张量core）增加了对 INT8/INT4/Binary 的
 
 T4最适合：小型模型的推理。关键特性： 比 L4 更旧且速度较慢。适合小规模实验和原型设计。例如，可以用T4 开始项目，然后在生产环境中使用 L4 或 A10 运行相同的代码。参考：https://images.nvidia.com/aem-dam/en-zz/Solutions/design-visualization/technologies/turing-architecture/NVIDIA-Turing-Architecture-Whitepaper.pdf
 
-## **2.4. Ampere（2020）**
+## Ampere（2020）
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A6054645e-4e97-4b67-9feb-9de1d5c2da28%3Aimage.png?table=block&id=1c86a624-db43-806f-81ab-e827c7262f65&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
@@ -111,7 +111,7 @@ T4最适合：小型模型的推理。关键特性： 比 L4 更旧且速度较�
 3. 第三代 NVLink：第三代 NVLink 的数据速率为 50 Gbit/sec 每对信号，并首次引入NVLink switch full to mesh 的概念。
 4. PCIe Gen 4：支持 PCIe Gen 4，提供 31.5 GB/s 的带宽。40 GB HBM2 和 40 MB L2 缓存：
 
-### 2.4.1. **NVLink：第三代**
+### NVLink：第三代
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3Ac8eafb38-e9d2-49d2-9d36-b3fc419f03d3%3Aimage.png?table=block&id=1c86a624-db43-803d-a778-eef165d7db19&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
@@ -145,7 +145,7 @@ NVLink12：表示最大双向600GB/s
 
 可以看到数据的远距离调用和切换，对于任务的运行，耗时、计算等都会产生影响，而这个影响是物理层面的瓶颈，只能尽可能的想尽办法将任务调度得更‘近’一点
 
-### 2.4.2. **多级带宽**
+### 多级带宽
 
 最下面为这次架构升级所引入 NVLink 技术，它主要来优化单机多块 GPU 卡之间的数据互连访问。在传统的架构中，GPU 之间的数据交换受到CPU 和 PCIe 总线的瓶颈。
 
@@ -175,7 +175,7 @@ https://images.nvidia.cn/aem-dam/en-zz/Solutions/data-center/nvidia-ampere-archi
 
 https://developer.download.nvidia.com/video/gputechconf/gtc/2020/presentations/s21730-inside-the-nvidia-ampere-architecture.pdf
 
-## 2.5. Ada Lovelace(2022)
+## Ada Lovelace(2022)
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A4758040a-e5cd-4cb5-ba6b-a6365b3795d9%3Aimage.png?table=block&id=1c86a624-db43-809c-a1b0-db872c3dce4a&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
@@ -193,7 +193,7 @@ VRAM 容量与 A10 相同，但内存带宽仅为一半。性能比 T4 高出 2 
 
 参考：https://images.nvidia.cn/aem-dam/Solutions/Data-Center/l4/nvidia-ada-gpu-architecture-whitepaper-v2.1.pdf
 
-## 2.6. Hopper（2022）
+## Hopper（2022）
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3Ad29d5fbe-7258-4883-9224-0a39dde5bc09%3Aimage.png?table=block&id=1c86a624-db43-8067-8fb8-f9838471e699&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
@@ -233,7 +233,7 @@ H100最适合：训练和推理非常大的模型（700 亿参数及以上），
 
 参考：https://resources.nvidia.com/en-us-tensor-core
 
-## 2.7. Blackwell
+## Blackwell
 
 目前据说已经推迟到2025上半年商业化，已经跳票好多次，目前官方还没有发布详细的白皮书信息。以下信息来自官方Breif说明。
 
@@ -250,7 +250,7 @@ H100最适合：训练和推理非常大的模型（700 亿参数及以上），
 
 https://resources.nvidia.com/en-us-blackwell-architecture
 
-# 3. **NVLink和NVSwitch**
+# NVLink和NVSwitch
 
 随着迈入大模型主导的时代，训练这些复杂的大型模型绝非易事，不仅因为需要耗费大量的GPU资源和时间成本，还因为单个GPU的内存容量有限，无法独自承载许多大型模型的数据量。为了解决这一挑战，业界转向了多GPU协作训练的方式，即分布式计算，分布式通信的概念是将多个计算单元（如服务器或GPU）互联，让它们能够协同工作以完成一个共同的任务。这种方式依赖于节点间的高效通信机制。
 
@@ -276,7 +276,7 @@ NVLink代表了一种前沿的互联标准，它不仅包括总线设计，还�
 
 参考：https://www.nvidia.cn/data-center/nvlink/
 
-# 4. CUDA
+# CUDA
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A0b363bb9-10cd-4fd3-8378-f235eb38bf3f%3Aimage.png?table=block&id=1c86a624-db43-80b7-91ed-c11cb40da2ce&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
