@@ -39,9 +39,6 @@ draft: false
 
 **v1.10.2-lts**版本下载链接：https://community.fit2cloud.com/#/products/maxkb/downloads
 
-![image.png](C:\Users\fan1k\AppData\Roaming\Typora\typora-user-images\image-20250329163512416.png)
-
-
 
 ## 安装部署
 
