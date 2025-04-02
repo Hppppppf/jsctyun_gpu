@@ -20,7 +20,7 @@ features:
     button:
       enable: true
       label: "立即查看"
-      link: "https://hppppppf.github.io/test.github.io/market"
+      link: "https://hppppppf.github.io/jsctyun_gpu/market/"
 
   - title: "算力部署计算器"
     image: "/images/service-2.png"
@@ -29,7 +29,7 @@ features:
     button:
       enable: true
       label: "算力部署计算器"
-      link: "https://hppppppf.github.io/test.github.io/cal"
+      link: "https://hppppppf.github.io/jsctyun_gpu/cal/"
     
   - title: "模型部署手册"
     image: "/images/service-1.png"
@@ -40,7 +40,7 @@ features:
     button:
       enable: true
       label: "部署手册"
-      link: "https://hppppppf.github.io/test.github.io/categories/部署手册/"
+      link: "https://hppppppf.github.io/jsctyun_gpu/categories/部署手册/"
 
   - title: "天翼云知识问答助手"
     image: "/images/service-2.png"
