@@ -15,6 +15,7 @@ draft: false
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A9c4f93a2-ca87-4708-844d-bacb9bc90720%3Aimage.png?table=block&id=1c86a624-db43-8033-88f8-e64a9fe34402&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1420&userId=&cache=v2)
 
 抛开任务管理层面，也就是把上一节的‘云-边-端’和‘GPU集群任务调度’暂且不讨论，原因是这两部分已经不单单是某个产品，或某一个技术能实现的，这个需要客户从最开始的业务架构的规划、到AI任务管理平台，再到硬件层面的拓扑架构等多方面的技术整合和选型，才能满足所需的AI任务的预期管理。本节主要聚焦在为了满足业务的不同GPU资源使用的诉求，**单卡调度、单机多卡调度和多机多卡调度所发展出来的基础技术。**
+<!--more-->
 
 ## 单GPU卡算力管理
 
