@@ -42,11 +42,6 @@ parent = "敬请期待"
 url = "/blog"
 
 [[main]]
-name = "智算资源"
-parent = "敬请期待"
-url = "#"
-
-[[main]]
 name = "智算测评"
 parent = "敬请期待"
 url = "#"
