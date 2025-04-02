@@ -24,7 +24,7 @@ draft: false
 
 - CUDA core：每个 SM 包含 64 个单精度（FP32）CUDA core，分为两个处理块，每个块有 32 个 FP32 CUDA core。虽然这比 Maxwell SM 的 CUDA core数量少了一半，但它保持了类似的寄存器文件大小和 warp/线程块占用率。
 - 寄存器和线程：尽管每个 SM 的 CUDA core较少，但 GP100 拥有更多的 SM（60个），因此总寄存器数量更多，并支持更多的线程、warp 和线程块同时运行。
-
+<!--more-->
 每个SM具有FP16计算的Cuda core 64个， FP32的Cuda core 32个.所以一个GP100总的core是： FP16: 64*60=3840， FP32:32*60=1920个
 
 - 共享内存：由于 SM 数量增加，GP100 GPU 的总共享内存量也增加了，聚合共享内存带宽实际上翻倍。
