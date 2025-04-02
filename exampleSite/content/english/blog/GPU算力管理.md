@@ -1,3 +1,13 @@
+---
+title: "GPU算力管理"
+meta_title: "GPU算力管理"
+description: "GPU算力管理"
+date: 2025-04-01T16:03:00+08:00
+categories: ["算力百科"]
+tags: ["GPU"]
+draft: false
+---
+
 # GPU算力管理
 
 # 1.算力管理概览
