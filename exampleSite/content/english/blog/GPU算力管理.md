@@ -217,27 +217,6 @@ RDMA，全称 Remote Direct Memory Access（远程直接内存访问），是一
 
 ![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A412d8f60-246f-4f79-b018-05cee6a1c5fc%3Aimage.png?table=block&id=1c86a624-db43-802d-97b1-ffd73aaf72c4&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1390&userId=&cache=v2)
 
-### 阿里云eRDMA
-
-eRDMA是阿里云自研的云上弹性RDMA网络，底层链路复用VPC网络，采用全栈自研的拥塞控制CC（Congestion Control）算法，享有传统RDMA网络高吞吐、低延迟特性的同时，可支持秒级的大规模RDMA组网。可兼容传统HPC应用、AI应用以及传统TCP/IP应用。
-
-传统TCP/IP协议由于其固有的局限性，如较大的拷贝开销、厚重的协议栈处理、复杂的拥塞控制（CC）算法以及频繁的上下文切换等，在面对数据中心业务对网络性能日益增长的需求时，逐渐成为应用性能提升的瓶颈。为解决这些问题，远程直接内存访问（RDMA）技术应运而生，它通过实现零拷贝和内核旁路等功能，大幅减少了数据传输中的延迟与CPU占用，并提高了吞吐量。然而，由于成本高昂且运维复杂，RDMA的应用范围受到了限制。针对这一问题，阿里云开发了增强型RDMA（eRDMA），旨在提供一种在云端普及的解决方案，既保持了RDMA低延迟的优势，又降低了部署和使用的门槛，使得更多应用程序能够受益于更优的网络性能。**eRDMA默认采用iWarp模式，相比较IB，RoCE，不需要专门的RDMA设备，与默认的VPC网络互通，成本最低，有丰富的组网和弹性拓展能力。**
-
-![image.png](https://speckled-amber-aa6.notion.site/image/attachment%3A9937b498-8117-4f5b-a09c-aab463e01a43%3Aimage.png?table=block&id=1c86a624-db43-80fa-b85c-f937184eedf5&spaceId=bd920ac3-a269-416a-b879-0fea0c915514&width=1290&userId=&cache=v2)
-
-**功能优势**
-
-高性能：ReRDMA继承RDMA优势，应用于VPC中，提供低延迟性能。
-
-普惠：eRDMA免费启用，购买实例时勾选即可，无需额外付费。
-
-规模部署：eRDMA采用自研CC算法，适应VPC网络变化，在有损环境中保持良好性能，简化大规模部署。
-
-弹性扩展：eRDMA基于神龙架构，支持ECS实例中动态添加和热迁移，部署灵活。
-
-共享VPC网络：eRDMA通过ENI复用现有网络资源，不改变业务组网即可激活RDMA功能，便于集成。
-
-官方已经提供比较详细的eRDMA信息，可以参考：https://help.aliyun.com/zh/ecs/user-guide/elastic-rdma-erdma/
 
 ### GDR
 
