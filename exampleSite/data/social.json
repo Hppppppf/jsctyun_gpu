@@ -1,14 +1,14 @@
 {
   "main": [
     {
-      "name": "weixin",
-      "icon": "fab fa-weixin",
-      "link": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg2ODcyODQ4NA==&action=getalbum&album_id=3885099036906307586&uin=&key=&devicetype=UnifiedPCWindows&version=f2540018&lang=zh_CN&ascene=0"
-    },
-    {
       "name": "wenjuan",
       "icon": "far fa-comment",
       "link": "https://dcnavza13y3v.feishu.cn/share/base/form/shrcnFh75BPQhtI0fIPbbUbkEtd"
+    },
+    {
+      "name": "二维码",
+      "icon": "fa fa-qrcode",
+      "link": "https://dcnavza13y3v.feishu.cn/wiki/Jl6NwJVKfij1WNkNUDgcnrMRn3f?from=from_copylink"
     }
   ]
 }
