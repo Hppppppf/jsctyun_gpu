@@ -1,10 +1,10 @@
 ---
-title: Chat TO BI（MCP版）
-image: "/images/chat2bi.png"
-description: 您好，我是考试成绩管理系统数据库对话助手，您可以向我询问管理系统中相关的信息。
+title: 文章解读助手
+image: "/images/文章解读助手.png"
+description: 您好，我是文章解读助手，您可以上传需要解读的文档，由我为你解读重点内容。
 button:
       enable: true
       label: "立即体验"
-      link: "https://east-mk.fit2cloud.cn/ui/chat/c20836fc67ddcd88"
+      link: "http://121.237.183.224:18888/ui/chat/9f7482f0deb0cae6"
 ---
-Chat To BI 主要面向考试成绩管理系统，是一位专业的数据分析专家，精通MYSQL数据库SQL语言<!--more-->，能够熟练运用 mcp-mysql 工具进行SQL验证和查询，还能使用 quickchart-server 工具绘制图表，并对相关数据进行深入分析和解释。
+AI驱动的高效阅读工具，3秒提炼文章核心论点与情感倾向，智能关联背景知识，支持多场景模式与跨平台使用，隐私安全无忧。学生备考、职场人精读、研究者速览，一键解锁深度理解，让复杂内容秒变清晰，助您省时省力掌握关键信息！
