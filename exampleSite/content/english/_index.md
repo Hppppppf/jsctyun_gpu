@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "江苏电信云省分<br>智算百宝箱"
+  title: "江苏电信云省分<br>智枢平台"
   content: ""
   image: "/images/banner.png"
   button:
