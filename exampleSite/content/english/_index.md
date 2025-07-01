@@ -44,11 +44,11 @@ features:
 
   - title: "天翼云知识问答助手"
     image: "/images/service-2.png"
-    content: "敬请期待"
+    content: "7×24小时全天候在线，深度整合天翼云全系产品文档、技术白皮书及实战案例库，提供精准问答服务。"
     bulletpoints:
     button:
-      enable: false
+      enable: true
       label: "息壤智算问答"
-      link: "http://180.97.52.141:9999/chat/roYBQdzZhdh4Bdid"
+      link: "http://121.237.183.224:18888/ui/chat/42f4244d4eeadb52"
 
 ---
