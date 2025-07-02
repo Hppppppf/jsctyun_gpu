@@ -7,7 +7,7 @@ categories: ["测试","PDF"]
 tags: ["测试", "PDF"]
 draft: false
 isPDF: true
-pdfPath: "/pdf/NVIDIA Blackwell 架构技术概述.pdf"
+pdfPath: "/pdf/Blackwell.pdf"
 ---
 
 测试
