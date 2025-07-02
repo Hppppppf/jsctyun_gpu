@@ -7,7 +7,7 @@ categories: ["测试","PDF"]
 tags: ["测试", "PDF"]
 draft: false
 isPDF: true
-pdfPath: "/jsctyun_gpu/pdf/test.pdf"
+pdfPath: "https://github.com/Hppppppf/jsctyun_gpu/blob/a0c7452a1d9bc69cecc4ffb5480cd32e3b89479f/exampleSite/assets/pdf/test.pdf"
 ---
 
 测试
