@@ -41,7 +41,9 @@
             </li>
           </ul>
           <div class="content mb-10">
+            {{ if not .Params.isPDF }}
               {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
+            {{ end }}
               {{ .Content }}
             {{ if .Params.isPDF }}
               <div class="pdf-container">
