@@ -10,4 +10,4 @@ isPDF: true
 pdfPath: "test.pdf"
 ---
 
-测试
+测试pdf
