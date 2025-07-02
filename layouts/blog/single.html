@@ -43,7 +43,7 @@
           <div class="content mb-10">
             {{ if .Params.isPDF }}
               <div class="pdf-container">
-                <iframe src="{{ .Params.pdfPath }}" type="application/pdf" width="100%" height="600px">
+                <embed src="{{ .Params.pdfPath }}" type="application/pdf" width="100%" height="600px">
               </div>
             {{ else }}
               {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
