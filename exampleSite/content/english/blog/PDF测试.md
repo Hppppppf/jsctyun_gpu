@@ -6,9 +6,6 @@ date: 2025-07-02T09:26:53+08:00
 categories: ["测试","PDF"]
 tags: ["测试", "PDF"]
 draft: false
-isPDF: true
-pdfPath: "/pdf/测试.pdf"
 ---
-
 
 测试
