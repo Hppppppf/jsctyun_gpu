@@ -42,13 +42,11 @@
           </ul>
           <div class="content mb-10">
             {{ if .Params.isPDF }}
+              {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
               <div class="pdf-container">
                 <embed src="{{ .Params.pdfPath }}" type="application/pdf" width="100%" height="600px">
               </div>
-            {{ else }}
-              {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
               {{ .Content }}
-            {{ end }}
           </div>
           <div class="row items-start justify-between">
             {{ $tags:= .Params.tags }}
