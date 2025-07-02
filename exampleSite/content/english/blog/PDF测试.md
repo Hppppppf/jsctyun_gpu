@@ -7,7 +7,7 @@ categories: ["测试","PDF"]
 tags: ["测试", "PDF"]
 draft: false
 isPDF: true
-pdfPath: "/images/test.pdf"
+pdfPath: "/pdf/test.pdf"
 ---
 
 测试pdf
