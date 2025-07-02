@@ -51,6 +51,10 @@ target = 'css'
 [[module.mounts]]
 source = 'assets'
 target = 'assets'
+ # 添加新的挂载配置
+  [[module.mounts]]
+    source = 'exampleSite/assets/pdf'
+    target = 'assets/pdf'
 [[module.mounts]]
 disableWatch = true
 source = 'hugo_stats.json'
